@@ -11,5 +11,7 @@ public class WaterBottle {
     }
 
 
-
+    public int drink() {
+        return volume - 10;
+    }
 }
