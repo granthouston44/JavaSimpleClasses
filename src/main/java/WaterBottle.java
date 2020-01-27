@@ -18,4 +18,7 @@ public class WaterBottle {
     public int tanIt(){
         return volume = 0;
     }
+
+    public void fill() {
+    }
 }
