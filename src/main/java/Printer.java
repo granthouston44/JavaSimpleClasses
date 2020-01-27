@@ -11,5 +11,6 @@ public class Printer {
     }
 
     public void print(int pages, int copies) {
+        sheetsLeft -= pages * copies;
     }
 }

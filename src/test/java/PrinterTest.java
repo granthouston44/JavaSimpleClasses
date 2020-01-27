@@ -21,4 +21,10 @@ public class PrinterTest {
         printer.print(5, 1);
         assertEquals(5, printer.getSheetsLeft());
     }
+
+    @Test
+    public void canPrintTwoCopies(){
+        printer.print(2, 2);
+        assertEquals(6, printer.getSheetsLeft());
+    }
 }
