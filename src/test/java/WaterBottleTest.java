@@ -22,5 +22,8 @@ public class WaterBottleTest {
         assertEquals(90, bottle.drink());
     }
 
-
+    @Test
+    public void multipleDrinkCalls(){
+        assertEquals(80, bottle.drink(), bottle.drink());
+    }
 }
