@@ -10,7 +10,16 @@ public class Printer {
         return sheetsLeft;
     }
 
-    public void print(int pages, int copies) {
-        sheetsLeft -= pages * copies;
+    public int print(int pages, int copies) {
+
+
+
+
+        do {
+            return sheetsLeft -= pages * copies;
+        }
+        while (sheetsLeft >=1);
+
+
     }
 }
