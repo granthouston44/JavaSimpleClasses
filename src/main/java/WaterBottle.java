@@ -14,4 +14,8 @@ public class WaterBottle {
     public int drink() {
         return volume - 10;
     }
+
+    public int tanIt(){
+        return volume = 0;
+    }
 }

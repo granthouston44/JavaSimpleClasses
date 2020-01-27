@@ -26,4 +26,10 @@ public class WaterBottleTest {
     public void multipleDrinkCalls(){
         assertEquals(80, bottle.drink(), bottle.drink());
     }
+
+    @Test
+    public void emptyBottle(){
+        bottle.tanIt();
+        assertEquals(0, bottle.getVolume());
+    }
 }
