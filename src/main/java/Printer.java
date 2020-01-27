@@ -6,6 +6,10 @@ public class Printer {
         this.sheetsLeft = sheetsLeft;
     }
 
+    public int getSheetsLeft(){
+        return sheetsLeft;
+    }
 
-
+    public void print(int pages, int copies) {
+    }
 }
