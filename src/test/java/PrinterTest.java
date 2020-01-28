@@ -36,9 +36,7 @@ public class PrinterTest {
 
     @Test
     public void willNotRunPrintIfNotEnoughPaper(){
-        printer.print(3, 1);
-        printer.print(3, 1);
-        printer.print(3, 2);
+        printer.print(3, 4);
         assertEquals(0, printer.getSheetsLeft());
 
     }

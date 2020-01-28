@@ -12,14 +12,14 @@ public class Printer {
 
     public int print(int pages, int copies) {
 
-
-
-        if (pages * copies >= sheetsLeft){
-            return sheetsLeft = 0;
+        int totalPages = pages * copies;
+        for (int i = 0; i < totalPages; i++){
+            if(sheetsLeft != 0) {
+                sheetsLeft -= 1;
+            }
         }
-        else{
-           return sheetsLeft -= pages * copies;
-        }
+        return sheetsLeft;
+    }
 
     }
-}
+
