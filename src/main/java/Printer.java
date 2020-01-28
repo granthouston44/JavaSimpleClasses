@@ -14,12 +14,12 @@ public class Printer {
 
 
 
-
-        do {
-            return sheetsLeft -= pages * copies;
+        if (pages * copies >= sheetsLeft){
+            return sheetsLeft = 0;
         }
-        while (sheetsLeft >=1);
-
+        else{
+           return sheetsLeft -= pages * copies;
+        }
 
     }
 }
